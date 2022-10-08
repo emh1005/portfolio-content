@@ -50,6 +50,18 @@ nav a:hover, nav a:focus {
 	color: skyblue;
 }
 
+a.active {
+	color: #3998CA;
+}
+
+h1 {
+	padding-bottom: 10px;
+}
+
+header h1 {
+	text-align: center;
+}
+
 /* Skip to Main Function*/
 .skip a {
     position: absolute;
