@@ -6,33 +6,47 @@
         <link rel="icon" href="img/favicon.png">
         <link rel="stylesheet" href="css/html5reset.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700;6..96,800&family=Jost:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/hamburgers.css" />
+        <script src="https://kit.fontawesome.com/3a7e1980bc.js" crossorigin="anonymous"></script>
         <title>About Me</title>
     </head>
     <body>
         <header>
-            <h1><a href="index.html">Emily Huang</a></h1>
+            <h1><a href="index.html" id="name">Emily Huang</a></h1>
             <nav>
-                <ul>
-                    <li><a href="about.html" class="active">About Me</a></li>
+                <ul id="full-nav">
+                    <li><a href="about.html">About Me</a></li>
                     <li><a href="designsystem.html">Design System</a></li>
                     <li><a href="einvoice.html">E-Invoice</a></li>
                 </ul>
+                <div id="nav-mob">
+					<div class="hamburger hamburger--collapse" id="hams">
+ 						<div class="hamburger-box">
+      						<div class="hamburger-inner"></div>
+    					</div>
+ 					 </div>
+ 					 <ul id="hammenu">
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="designsystem.html">Design System</a></li>
+                            <li><a href="einvoice.html">E-Invoice</a></li>
+						</ul>
+					</div>
             </nav>
         </header>
-        <main>
-            <p>I'm a full-time bookworm and a part-time designer, but also a podcaster and a web designer/developer. I graduated with a Bachelor's degree in Interaction Design from University of Washington, and I'm currently studying at University of Michigan in Information. I'm passionate about storytelling through different means, be it through video, voice or words. I'm always up for a challenge and learning or trying new things. When I'm not designing or reading, I like traveling, oil painting and photography.
+        <main id="main">
+            <h1>hi.</h1>
+            <p id="about">I'm a full-time bookworm and a part-time designer, but also a podcaster and a web designer/developer. I graduated with a Bachelor's degree in Interaction Design from University of Washington, and I'm currently studying at University of Michigan in Information. I'm passionate about storytelling through different means, be it through video, voice or words. I'm always up for a challenge and learning or trying new things. When I'm not designing or reading, I like traveling, oil painting and photography.<br /><br />
             Let's Chat! Email me at emihuang@umich.edu</p>
 
-            <p>Some of my favorite books:</p>
+            <h2><i class="fa-solid fa-book"></i>Some of my favorite books:</h2>
                 <ul>
-                    <li>A Darker Shade of Magic by V.E. Schwab</li>
-                    <li>An Unkindness of Magicians by Kat Howard</li>
-                    <li>Mistborn: The Final Empire by Brandon Sanderson</li>
-                    <li>Six of Crows by Leigh Bardugo</li>
-                    <li>Pride and Prejudice by Jane Austen</li>
+                    <li><span>A Darker Shade of Magic</span> by V.E. Schwab</li>
+                    <li><span>An Unkindness of Magicians</span> by Kat Howard</li>
+                    <li><span>Mistborn: The Final Empire</span> by Brandon Sanderson</li>
+                    <li><span>Six of Crows</span> by Leigh Bardugo</li>
+                    <li><span>Pride and Prejudice</span> by Jane Austen</li>
                 </ul>
             <img src="img/about.jpg" alt="About Me">
 
@@ -40,5 +54,6 @@
         <footer>
             <p>&copy; Emily Huang</p>
         </footer>
+        <script type="text/javascript" src="script/script.js"></script>
     </body>
 </html>

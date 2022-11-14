@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="img/favicon.png">
         <link rel="stylesheet" href="css/html5reset.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700;6..96,800&family=Jost:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/hamburgers.css" />
         <title>Emily Huang</title>
     </head>
     <body>
         <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <header>
-            <h1><a href="index.html">Emily Huang</a></h1>
+            <h1><a href="index.html" id="name">Emily Huang</a></h1>
             <nav>
-                <ul>
+                <ul id="full-nav">
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="designsystem.html">Design System</a></li>
                     <li><a href="einvoice.html">E-Invoice</a></li>
                 </ul>
+                <div id="nav-mob">
+					<div class="hamburger hamburger--collapse" id="hams">
+ 						<div class="hamburger-box">
+      						<div class="hamburger-inner"></div>
+    					</div>
+ 					 </div>
+ 					 <ul id="hammenu">
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="designsystem.html">Design System</a></li>
+                            <li><a href="einvoice.html">E-Invoice</a></li>
+						</ul>
+					</div>
             </nav>
+            
         </header>
-        <main id="main">
+        <main id="main-home">
             <section id="ds">
                 <a href="designsystem.html">
                     <h1>Design System</h1>
-                    <p>This design system is for all client-facing websites and products. The team established a brand new design system, including design principles, component library, usage rules, and governance strategy, to serve as a design basis for all current and future products and deliver a cohesive visual and interactive experience for the users.</p>
                     <img class="homeimg" src="img/ds.png" alt="Design System">
+                    <p>This design system is for all client-facing websites and products. The team established a brand new design system, including design principles, component library, usage rules, and governance strategy, to serve as a design basis for all current and future products and deliver a cohesive visual and interactive experience for the users.</p>
                 </a>
             </section>
             <section id="einvoice">
                 <a href="einvoice.html">
                     <h1>E-Invoice</h1>
+                    <img class="homeimg" src="img/einvoice.png" alt="Electronic Invoice">
                     <h2>Webpage Redesign</h2>
                     <p>The existing webpage of Universal EC Inc.'s Electronic Invoice product page is a static one-page. I introduced UX concepts and elements to this page and redesigned it into an interactive webpage.</p>
-                    <img class="homeimg" src="img/einvoice.png" alt="Electronic Invoice">
                 </a>
             </section>
 
@@ -44,5 +57,6 @@
         <footer>
             <p>&copy; Emily Huang</p>
         </footer>
+        <script type="text/javascript" src="script/script.js"></script>
     </body>
 </html>
