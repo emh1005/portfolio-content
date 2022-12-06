@@ -13,11 +13,12 @@
         <title>About Me</title>
     </head>
     <body>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <header>
             <h1><a href="index.html" id="name">Emily Huang</a></h1>
             <nav>
                 <ul id="full-nav">
-                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html" class="active">About Me</a></li>
                     <li><a href="designsystem.html">Design System</a></li>
                     <li><a href="einvoice.html">E-Invoice</a></li>
                 </ul>
@@ -37,22 +38,44 @@
         </header>
         <main id="main">
             <h1>hi.</h1>
-            <p id="about">I'm a full-time bookworm and a part-time designer, but also a podcaster and a web designer/developer. I graduated with a Bachelor's degree in Interaction Design from University of Washington, and I'm currently studying at University of Michigan in Information. I'm passionate about storytelling through different means, be it through video, voice or words. I'm always up for a challenge and learning or trying new things. When I'm not designing or reading, I like traveling, oil painting and photography.<br><br>
-            Let's Chat! Email me at emihuang@umich.edu</p>
-
-            <h2><i class="fa-solid fa-book"></i>Some of my favorite books:</h2>
-                <ul>
-                    <li><span>A Darker Shade of Magic</span> by V.E. Schwab</li>
-                    <li><span>An Unkindness of Magicians</span> by Kat Howard</li>
-                    <li><span>Mistborn: The Final Empire</span> by Brandon Sanderson</li>
-                    <li><span>Six of Crows</span> by Leigh Bardugo</li>
-                    <li><span>Pride and Prejudice</span> by Jane Austen</li>
-                </ul>
-            <img src="img/about.jpg" alt="About Me">
-
+            <div id="aboutme">
+                <p id="about">I'm a full-time bookworm and a part-time designer, but also a podcaster and a web designer/developer. I graduated with a Bachelor's degree in Interaction Design from University of Washington, and I'm currently studying at University of Michigan in Information. I'm passionate about storytelling through different means, be it through video, voice or words. I'm always up for a challenge and learning or trying new things. When I'm not designing or reading, I like traveling, oil painting and photography.</p>
+                <img src="img/about.jpg" alt="About Me">
+                <aside>
+                    <h2><i class="fa-solid fa-book"></i>Some of my favorite books:</h2>
+                    <ul>
+                        <li><span>A Darker Shade of Magic</span> by V.E. Schwab</li>
+                        <li><span>An Unkindness of Magicians</span> by Kat Howard</li>
+                        <li><span>Mistborn: The Final Empire</span> by Brandon Sanderson</li>
+                        <li><span>Six of Crows</span> by Leigh Bardugo</li>
+                        <li><span>Pride and Prejudice</span> by Jane Austen</li>
+                    </ul>
+                </aside>
+                <form action="https://formspree.io/f/xnqreprv" method="POST" >
+                    Let's Chat! Please fill out the form below, and I'll get right back to you!
+                    <br>
+                    <label>
+                        Your name:
+                        <input type="name" name="name">
+                    </label>
+                    <br>
+                    <label>
+                        Your email:
+                        
+                    </label>
+                    <input type="email" name="email">
+                    <br>
+                    <label>
+                        Your message:
+                        <textarea name="message"></textarea>
+                    </label>
+                    <br>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </main>
         <footer>
-            <p>&copy; Emily Huang</p>
+            <!-- &copy; Emily Huang -->
         </footer>
         <script src="script/script.js"></script>
     </body>

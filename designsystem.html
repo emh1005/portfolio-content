@@ -13,12 +13,13 @@
 
     </head>
     <body>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <header>
             <h1><a href="index.html" id="name">Emily Huang</a></h1>
             <nav>
                 <ul id="full-nav">
                     <li><a href="about.html">About Me</a></li>
-                    <li><a href="designsystem.html">Design System</a></li>
+                    <li><a href="designsystem.html" class="active">Design System</a></li>
                     <li><a href="einvoice.html">E-Invoice</a></li>
                 </ul>
                 <div id="nav-mob">
@@ -37,15 +38,22 @@
         </header>
         <main id="main">
             <h1>Design System</h1>
+            <div id="dsdiv">
+            <section>
             <p>This design system is for all client-facing websites and products. The team established a brand new design system, including design principles, component library, usage rules, and governance strategy, to serve as a design basis for all current and future products and deliver a cohesive visual and interactive experience for the users.</p>
             
-            <h2>Project Goals</h2>
+            <div>
+            <h3>Project Goals</h3>
             <ul>
                 <li>Improve the consistency of customer experience when using different products</li>
                 <li>Deepen customers' impression of the overall brand and digital services</li>
                 <li>Improve teamwork & development efficiency: Designers and developers have a common set of standards</li>
                 <li>Establish commonality: Ensuring that outsourcing operations and overseas expansion maintain brand consistency</li>
             </ul>
+            </div>
+            </section>
+
+            
             <h2>The Framework of the Design System</h2>
 			<img src="img/ds-framework.png" alt="Design System Framework">
 
@@ -55,48 +63,78 @@
 
             <h2>Current Style Inventory</h2>
 			<p>The team categorized all styles from E.Sun's current websites, banking apps, and web banking pages to assess what elements to keep, modify inconsistency, and define lacking components.</p>
-
-
+            
             <h2>Colors</h2>
 			<p>Multiple colors are used for the same component, resulting in no unified logic for the usage of colors</p>
+            <section>
+            <div>
             <h3>Orginal Colors</h3>
 			<img src="img/ds-colororg.png" alt="Original Colors">
+            </div>
+            <div>
             <h3>Redefined Colors</h3>
 			<img src="img/ds-colornew.png" alt="Redefined Colors">
+            </div>
+            </section>
 
 
             <h2>Icons</h2>
 			<p>Various styles of icons appear on a single platform, and different icons for the same ideas</p>
-		    <h3>Orginal Icons</h3>
+		    <section>
+            <div>
+            <h3>Orginal Icons</h3>
 			<img src="img/ds-iconorg.png" alt="Original Icons">
+            </div>
+            <div>
 			<h3>Redesigned Icons</h3>
 			<img src="img/ds-iconnew.png" alt="Redesigned Icons">
+            </div>
+            </section>
 
 
             <h2>Buttons</h2>
 			<p>Buttons comes in a wide variety of styles and colors without clear guidance of what context each should be used in</p>
+            <section>
+            <div>
 			<h3>Orginal Buttons</h3>
 			<img src="img/ds-buttonorg.png" alt="Original Buttons">
+            </div>
+            <div>
             <h3>Redesigned Buttons</h3>
 			<img src="img/ds-buttonnew.png" alt="Redesigned Buttons">
+            </div>
+            </section>
 
 
             <h2>Application of Design System</h2>
             <h2>Website Frontpage</h2>
+            <section>
+            <div>
 			<h3>Orginal Website</h3>
 			<img src="img/ds-weborg.png" alt="Original Website">
+            </div>
+            <div>
 			<h3>Redesigned Website</h3>
 			<img src="img/ds-webnew.png" alt="Redesigned Website">
+            </div>
+            </section>
 
 			<h2>Mobile Banking App</h2>
+            <section>
+            <div>
 			<h3>Orginal App</h3>
 			<img src="img/ds-apporg.png" alt="Original App">
+            </div>
+            <div>
 			<h3>Redesigned App</h3>
 			<img src="img/ds-appnew.png" alt="Redesigned App">
- 
+            </div>
+            </section>
+            
+        </div>
         </main>
         <footer>
-            <p>&copy; Emily Huang</p>
+            &copy; Emily Huang
         </footer>
         <script src="script/script.js"></script>
     </body>
